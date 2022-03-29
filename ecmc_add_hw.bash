@@ -1,3 +1,4 @@
+#! /bin/bash
 
 cfg_path=$1
 
