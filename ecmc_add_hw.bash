@@ -1,17 +1,18 @@
 
-ecmccfg_path=$1
-cfg_path=$2
+cfg_path=$1
+
 nl='
 '
 
 hwdirsubpath="hardware"
 hwexcludefilter="loop\|CoE\|stepDirectionDrive\|AnalogOutput\|AnalogInput\|EX\|WatchDog\|XXXX"
 hwextension=".cmd"
+
 source $cfg_path
-let i=1
+
 ALLFILES=""
-for dir in "${dirs[@]}"; do   
-    FILES=$(find $ecmccfg_path/$hwdirsubpath/$dir -type f -name "*.cmd" | grep -v $hwexcludefilter)
+for dir in "${dirs[@]}"; do    
+    FILES=$(find $ecmccfgpath/$hwdirsubpath/$dir/ -type f -name "*.cmd" | grep -v $hwexcludefilter)
     ALLFILES="$ALLFILES$nl$FILES "
 done
 # Filter out filenames

@@ -1,6 +1,11 @@
-ecmccfg_path=$1
-cfg_path=$2
+
+cfg_path=$1
+
+source $cfg_path
+
+# Add pre
+bash ecmc_add_pre.bash $cfg_path 
 
 # Add hardware
-bash ecmc_add_hw.bash $ecmccfg_path $cfg_path
+bash ecmc_add_hw.bash $cfg_path
 
