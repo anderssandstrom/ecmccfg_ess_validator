@@ -10,3 +10,5 @@ bash ecmc_add_pre.bash $cfg_path
 # Add hardware
 bash ecmc_add_hw.bash $cfg_path
 
+# Add post
+bash ecmc_add_post.bash $cfg_path
