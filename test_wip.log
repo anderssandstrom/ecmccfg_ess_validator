@@ -1,0 +1,38 @@
+List of PVs breaking length rule:
+#m0s101-latchTime01-rising: PV property to long (26 > 25 chars)
+#m0s101-latchTime01-falling: PV property to long (27 > 25 chars)
+#m0s101-latchTime02-rising: PV property to long (26 > 25 chars)
+#m0s101-latchTime02-falling: PV property to long (27 > 25 chars)
+#m0s205-Pos01-StartType-RB: PV property to long (26 > 25 chars)
+#m0s101-latchTime01-risingTS: PV property to long (28 > 25 chars)
+#m0s101-latchTime01-fallingTS: PV property to long (29 > 25 chars)
+#m0s101-latchTime02-risingTS: PV property to long (28 > 25 chars)
+#m0s101-latchTime02-fallingTS: PV property to long (29 > 25 chars)
+#m0s182-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s183-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s195-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s197-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s203-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s204-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s206-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s211-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s212-Enc01-LtchAutRstSp: PV property to long (26 > 25 chars)
+#m0s179-Enc01-PosAct-Array: PV property to long (26 > 25 chars)
+
+
+
+
+
+Axis10-AllwCmdFrmPLCCmd-RB: PV property to long (26 > 25 chars)
+
+
+#m0s197-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+#m0s199-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+#m0s201--Drv01-SyncErr-Alrm: PV property to long (27 > 25 chars)
+#m0s201--Drv02-SyncErr-Alrm: PV property to long (27 > 25 chars)
+#m0s203-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+#m0s204-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+#m0s206-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+#m0s211-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+#m0s212-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+
