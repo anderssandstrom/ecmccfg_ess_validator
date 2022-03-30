@@ -28,3 +28,4 @@ List of PVs breaking length rule:
 #m0s206-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
 #m0s211-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
 #m0s212-Drv01-SyncErr-Alrm: PV property to long (26 > 25 chars)
+Axis10-AllwCmdFrmPLCCmd-RB: PV property to long (26 > 25 chars)
