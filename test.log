@@ -1,3 +1,4 @@
+List of PVs breaking length rule:
 #m0s101-latchTime01-rising: PV property to long (26 > 25 chars)
 #m0s101-latchTime01-falling: PV property to long (27 > 25 chars)
 #m0s101-latchTime02-rising: PV property to long (26 > 25 chars)

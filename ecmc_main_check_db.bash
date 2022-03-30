@@ -20,4 +20,5 @@ length=$(expr length $prefix)
 # remove prefix for length check
 property=$(cat pvs.log | cut -c $length- | cut -c 3-)
 
+echo "List of PVs breaking length rule:"
 echo "$property" | awk -v maxl=$maxproplength '{len=length($1); if(len>maxl) {print $0 ": PV property to long (" len " > " maxl" chars)";}}'
