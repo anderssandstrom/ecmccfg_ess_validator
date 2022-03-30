@@ -29,3 +29,9 @@ ALLFILES=$(echo "$ALLFILES" | cut -c 5- | rev | cut -c 5- | rev)
 echo "$ALLFILES " | awk 'BEGIN{i=0;} {print "${SCRIPTEXEC} ${ecmccfg_DIR}addSlave.cmd, \"SLAVE_ID=" i ", HW_DESC=" $1 "\""; i=i+1}'
 
 echo "ecmcConfigOrDie \"Cfg.EcApplyConfig(1)\""
+
+
+#dbLoadTemplate(ecmcEK1100.substitutions,"ECMC_P=IOC_TEST:#m0s000-,ECMC_G=IOC_TEST:#m0s000,PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=0,HWTYPE=EK1100,T_SMP_MS=10,TSE=-2,NELM=1")
+#dbLoadRecords("ecmcEcSlave.template", "ECMC_P=IOC_TEST:#m0s000-,ECMC_G=IOC_TEST:#m0s000,PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=0,HWTYPE=EK1100,T_SMP_MS=10,TSE=-2,")
+
+
