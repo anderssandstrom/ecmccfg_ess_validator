@@ -12,5 +12,12 @@ echo "$stfile" > st.cmd
 #Run ioc
 ioclog=$(iocsh.bash st.cmd)
 
+echo "$ioclog" >ioc.log
+
 # check pvs
-cat pvs.log
+length=$(expr length $prefix)
+
+# remove prefix for length check
+property=$(cat pvs.log | cut -c $length- | cut -c 3-)
+
+echo "$property"
