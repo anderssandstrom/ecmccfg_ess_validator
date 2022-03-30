@@ -303,4 +303,4 @@ iocInit()
 epicsThreadSleep(1)
 dbl > pvs.log
 dbpf ${REQUIRE_IOC}:exit 1
-epicsThreadSleep(1)
+epicsThreadSleep(1) st.cmd

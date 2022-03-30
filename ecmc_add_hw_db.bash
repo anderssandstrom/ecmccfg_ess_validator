@@ -25,7 +25,7 @@ ALLFILES=$(echo "$ALLFILES" | cut -c 5- | rev | cut -c 5- | rev)
 #echo "$ALLFILES "
 
 # Generate hw snippet fro all supported hardware
-echo "$ALLFILES " | awk -v pfix=$prefix -v name=$naming ' BEGIN{i=100;} {print "${SCRIPTEXEC}\"${ecmccfg_DIR}/ecmc" name ".cmd\" \"MASTER_ID=0,SLAVE_POS=" i ",HWTYPE=" $1"\""; print "dbLoadTemplate(ecmc" $1 ".substitutions,\"ECMC_P=${ECMC_P},ECMC_G=${ECMC_G},PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=" i ",HWTYPE=" $1 ",T_SMP_MS=10,TSE=-2,NELM=1\")"; i=i+1;}'
+echo "$ALLFILES " | awk -v pfix=$prefix -v name=$naming ' BEGIN{i=100;} {print "${SCRIPTEXEC} \"${ecmccfg_DIR}ecmc" name ".cmd\" \"MASTER_ID=0,SLAVE_POS=" i ",HWTYPE=" $1"\""; print "dbLoadTemplate(ecmc" $1 ".substitutions,\"ECMC_P=${ECMC_P},ECMC_G=${ECMC_G},PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=" i ",HWTYPE=" $1 ",T_SMP_MS=10,TSE=-2,NELM=1\")"; i=i+1;}'
 echo "dbLoadRecords(\"ecmcEcSlave.template\", \"ECMC_P=\${ECMC_P},ECMC_G=\${ECMC_G},PORT=MC_CPU1,ADDR=0,TIMEOUT=1,MASTER_ID=0,SLAVE_POS=0,HWTYPE=EK1100,T_SMP_MS=10,TSE=-2,\")"
 
 
@@ -33,3 +33,4 @@ echo "dbLoadRecords(\"ecmcEcSlave.template\", \"ECMC_P=\${ECMC_P},ECMC_G=\${ECMC
 
 
 
+"st.cmd line 291: Command iocshLoad/home/iocuser/epics/base-7.0.5/require/3.4.0/siteMods/ecmccfg/7.0.1//ecmcESSnaming.cmd not found.
