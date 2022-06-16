@@ -10,7 +10,7 @@ stfile=$(bash ecmc_generate_st_file_db.bash $cfg_path)
 echo "$stfile" > st.cmd
 
 #Run ioc
-ioclog=$(iocsh.bash st.cmd)
+ioclog=$($iocsh_exe_cmd st.cmd)
 
 echo "$ioclog" >ioc.log
 
